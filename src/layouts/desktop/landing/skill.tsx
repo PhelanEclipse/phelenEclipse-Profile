@@ -83,7 +83,7 @@ function Skill() {
         <Typography.Headings className="dark:text-dark uppercase text-[92px]">
           Skills
         </Typography.Headings>
-        <Box className="flex flex-wrap gap-20 w-full">
+        <Box className="flex flex-wrap gap-20 w-full justify-center items-center">
           {data.map((i) => {
             return <Card key={i.title} {...i} />;
           })}
