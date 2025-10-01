@@ -11,7 +11,6 @@ import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 function ThemeColor() {
   const { location } = useRouterUtils();
 
-  console.log("ThemeColorThemeColorThemeColorThemeColor");
   const title = useMemo(() => {
     const paths: TPath[] = Object.values(Config.Path);
     const item = paths.find((i) => i.url === location.pathName);
@@ -22,7 +21,7 @@ function ThemeColor() {
   useDocumentTitle(title.title);
 
   return (
-    <Box className="dark" id="wrapper">
+    <Box className="dark dark:bg-[#1E201E]" id="wrapper">
       <Outlet />
       <Toast />
       <Modal />

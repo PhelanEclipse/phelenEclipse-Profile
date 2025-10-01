@@ -8,8 +8,11 @@ export default {
         disabled: "#DDDDDD",
         normal: "#151515",
         error: "#E43636",
+        dark: "#1E201E",
       },
-      backgroundImage: {},
+      backgroundImage: {
+        primary: "linear-gradient(145deg, #000000, #2e003e, #a855f7)",
+      },
       borderRadius: {
         input: "8px",
       },

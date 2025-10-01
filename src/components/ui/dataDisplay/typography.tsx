@@ -8,38 +8,39 @@ type HeadingsProps = {
   HTMLHeadingElement
 >;
 
-function Headings({ type = "h1", className = "", ...props }: HeadingsProps) {
+function Headings({
+  type = "h1",
+  className = "dark:text-white",
+  ...props
+}: HeadingsProps) {
   const headerElements = {
     h1: (
-      <h1
-        className={`text-dark font-semibold text-[60px] ${className}`}
-        {...props}
-      >
+      <h1 className={`font-semibold text-[60px] ${className}`} {...props}>
         {props.children}
       </h1>
     ),
     h2: (
-      <h2 className={`text-dark font-semibold ${className}`} {...props}>
+      <h2 className={`font-semibold ${className}`} {...props}>
         {props.children}
       </h2>
     ),
     h3: (
-      <h3 className={`text-dark font-semibold ${className}`} {...props}>
+      <h3 className={`font-semibold ${className}`} {...props}>
         {props.children}
       </h3>
     ),
     h4: (
-      <h4 className={`text-dark font-semibold ${className}`} {...props}>
+      <h4 className={`font-semibold ${className}`} {...props}>
         {props.children}
       </h4>
     ),
     h5: (
-      <h5 className={`text-dark font-semibold ${className}`} {...props}>
+      <h5 className={`font-semibold ${className}`} {...props}>
         {props.children}
       </h5>
     ),
     h6: (
-      <h6 className={`text-dark font-semibold ${className}`} {...props}>
+      <h6 className={`font-semibold ${className}`} {...props}>
         {props.children}
       </h6>
     ),
