@@ -1,5 +1,7 @@
+import { Scroll } from "@/components/ui/animation/scroll";
 import { Loader } from "@/components/ui/dataDisplay/loader";
 import { Typography } from "@/components/ui/dataDisplay/typography";
+import Box from "@/components/ui/layout/box";
 import type { ReactNode } from "react";
 import { GoDotFill } from "react-icons/go";
 
@@ -14,7 +16,7 @@ const ProcessWork = (props: ProcessWorkProps) => {
   return (
     <div className="">
       <div className="text-white gap-14 divide-x min-w-fit grid grid-cols-2 relative">
-        <section className="py-7 relative flex flex-col gap-2 text-nowrap text-2xl w-full pr-14">
+        <section className="py-7 company transition-all duration-[2s] relative flex flex-col gap-2 text-nowrap text-2xl w-full pr-14">
           <div className="flex flex-col gap-2">
             <p className="text-2xl font-bold uppercase gap-3 text-end">
               {props.companyName}
@@ -35,96 +37,202 @@ const ProcessWork = (props: ProcessWorkProps) => {
   );
 };
 
+function Astronaut() {
+  return (
+    <Box>
+      <div className="box-of-star1">
+        <div className="star star-position1"></div>
+        <div className="star star-position2"></div>
+        <div className="star star-position3"></div>
+        <div className="star star-position4"></div>
+        <div className="star star-position5"></div>
+        <div className="star star-position6"></div>
+        <div className="star star-position7"></div>
+      </div>
+      <div className="box-of-star2">
+        <div className="star star-position1"></div>
+        <div className="star star-position2"></div>
+        <div className="star star-position3"></div>
+        <div className="star star-position4"></div>
+        <div className="star star-position5"></div>
+        <div className="star star-position6"></div>
+        <div className="star star-position7"></div>
+      </div>
+      <div className="box-of-star3">
+        <div className="star star-position1"></div>
+        <div className="star star-position2"></div>
+        <div className="star star-position3"></div>
+        <div className="star star-position4"></div>
+        <div className="star star-position5"></div>
+        <div className="star star-position6"></div>
+        <div className="star star-position7"></div>
+      </div>
+      <div className="box-of-star4">
+        <div className="star star-position1"></div>
+        <div className="star star-position2"></div>
+        <div className="star star-position3"></div>
+        <div className="star star-position4"></div>
+        <div className="star star-position5"></div>
+        <div className="star star-position6"></div>
+        <div className="star star-position7"></div>
+      </div>
+      <div data-js="astro" className="astronaut">
+        <div className="head"></div>
+        <div className="arm arm-left"></div>
+        <div className="arm arm-right"></div>
+        <div className="body">
+          <div className="panel"></div>
+        </div>
+        <div className="leg leg-left"></div>
+        <div className="leg leg-right"></div>
+        <div className="schoolbag"></div>
+      </div>
+    </Box>
+  );
+}
 function Work() {
   return (
-    <div className="w-full transition-all duration-[2.5s]">
-      <article className="max-w-[1440px] w-full m-auto gap-20 h-full flex flex-col items-center justify-between py-20">
-        <Typography.Headings className="dark:text-white uppercase text-[92px]">
-          My Work Experience
-        </Typography.Headings>
-        <div className="flex flex-col gap-20 h-full">
-          <ProcessWork
-            companyName="South Telecom (Intelin branch)"
-            timeEnd="The current"
-            timeStart="July, 2022"
-          >
-            <div className="pl-32 flex flex-col gap-6">
-              <p className="text-2xl font-bold uppercase -translate-x-5">
-                Web developer
-              </p>
-              <ul className="list-disc flex flex-col gap-4 font-light leading-7">
-                <li>
-                  <p>
-                    Developed a <span className="font-bold">RESTful API</span>{" "}
-                    that integrated with a third-party service, allowing for
-                    seamless data synchronization and improved performancejs and{" "}
-                    <span className="font-bold">Redux</span> that improved user
-                    satisfaction{" "}
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span className="font-bold">RESTful API</span> that
-                    integrated with a third-party service, allowing for seamless
-                    data synchronization and improved performance
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Designed and implemented a web application that was
-                    compatible with multiple browsers and devices with minimal
-                    errors
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Professional in creating animation with{" "}
-                    <span className="font-bold">CSS (BEM)</span>, using many{" "}
-                    <span className="font-bold">UI libraries</span> such as{" "}
-                    <span className="font-bold">
-                      tailwind, Mui, React kendo ...
-                    </span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Get exposure to professional projects that are trusted by
-                    many people such as{" "}
-                    <span className="font-bold underline">
-                      <a href="https://giotmauvang.org.vn/">
-                        giotmauvang (ReactJS)
-                      </a>
-                    </span>
-                    ,{" "}
-                    <span className="font-bold underline">
-                      <a href="https://web360.evnhcmc.vn/">evnhcmc (Nextjs)</a>
-                    </span>
-                    ,{" "}
-                    <span className="font-bold">kingSmart (Zalo mini app)</span>
-                    ,{" "}
-                    <span className="font-bold">
-                      Viettel Post (Zalo mini app),{" "}
-                    </span>
-                    <span className="font-bold">
-                      Company Web (Nestjs and EJS) and some outsourcing projects
-                      on e-commerce
-                    </span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Under tireless dedication was recognized as{" "}
-                    <span className="font-bold">
-                      employee of the year (2024)
-                    </span>
-                  </p>
-                </li>
-              </ul>
+    <Scroll.ByElement
+      idElementScroll="landingPage"
+      id="experiences"
+      animation="experiences-active"
+    >
+      <div
+        id="experiences"
+        className="w-full overflow-hidden transition-all relative experiences duration-[2.5s]"
+      >
+        <div className="evn">
+          <div className="space-environment">
+            <div className="stars-container">
+              <div className="stars stars-near"></div>
+              <div className="stars stars-mid"></div>
+              <div className="stars stars-far"></div>
             </div>
-          </ProcessWork>
+
+            <div className="planets">
+              <div className="planet planet-1">
+                <div className="planet-ring"></div>
+                <div className="planet-crater"></div>
+              </div>
+              <div className="planet planet-2">
+                <div className="planet-atmosphere"></div>
+              </div>
+            </div>
+
+            <div className="meteors">
+              <div className="meteor meteor-1"></div>
+              <div className="meteor meteor-2"></div>
+              <div className="meteor meteor-3"></div>
+            </div>
+
+            <div className="orbit-paths">
+              <div className="orbit-path path-1"></div>
+              <div className="orbit-path path-2"></div>
+              <div className="orbit-path path-3"></div>
+            </div>
+          </div>
         </div>
-      </article>
-    </div>
+        <Box className="containerBallBottom absolute bottom-40 left-40 transition-all duration-1000">
+          <Box className="size-80 ballBottom transition-all duration-500 rounded-full scale-125">
+            <Astronaut />
+          </Box>
+        </Box>
+        <article className="max-w-[1440px] w-full m-auto gap-20 h-full flex flex-col items-center justify-between py-20 relative z-10">
+          <Box className="h-[138px] flex items-end">
+            <Box className="text-work overflow-hidden">
+              <Typography.Headings className="dark:text-white uppercase transition-all duration-1000 text-[92px]">
+                My Work Experience
+              </Typography.Headings>
+            </Box>
+          </Box>
+          <div className="flex flex-col gap-20 h-full">
+            <ProcessWork
+              companyName="South Telecom (Intelin branch)"
+              timeEnd="The current"
+              timeStart="July, 2022"
+            >
+              <div className="pl-32 position  transition-all duration-1000 flex flex-col gap-6">
+                <p className="text-2xl font-bold uppercase -translate-x-5">
+                  Web developer
+                </p>
+                <ul className="list-disc flex flex-col gap-4 font-light leading-7">
+                  <li>
+                    <p>
+                      Developed a <span className="font-bold">RESTful API</span>{" "}
+                      that integrated with a third-party service, allowing for
+                      seamless data synchronization and improved performancejs
+                      and <span className="font-bold">Redux</span> that improved
+                      user satisfaction{" "}
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <span className="font-bold">RESTful API</span> that
+                      integrated with a third-party service, allowing for
+                      seamless data synchronization and improved performance
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Designed and implemented a web application that was
+                      compatible with multiple browsers and devices with minimal
+                      errors
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Professional in creating animation with{" "}
+                      <span className="font-bold">CSS (BEM)</span>, using many{" "}
+                      <span className="font-bold">UI libraries</span> such as{" "}
+                      <span className="font-bold">
+                        tailwind, Mui, React kendo ...
+                      </span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Get exposure to professional projects that are trusted by
+                      many people such as{" "}
+                      <span className="font-bold underline">
+                        <a href="https://giotmauvang.org.vn/">
+                          giotmauvang (ReactJS)
+                        </a>
+                      </span>
+                      ,{" "}
+                      <span className="font-bold underline">
+                        <a href="https://web360.evnhcmc.vn/">
+                          evnhcmc (Nextjs)
+                        </a>
+                      </span>
+                      ,{" "}
+                      <span className="font-bold">
+                        kingSmart (Zalo mini app)
+                      </span>
+                      ,{" "}
+                      <span className="font-bold">
+                        Viettel Post (Zalo mini app),{" "}
+                      </span>
+                      <span className="font-bold">
+                        Company Web (Nestjs and EJS) and some outsourcing
+                        projects on e-commerce
+                      </span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Under tireless dedication was recognized as{" "}
+                      <span className="font-bold">
+                        employee of the year (2024)
+                      </span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </ProcessWork>
+          </div>
+        </article>
+      </div>
+    </Scroll.ByElement>
   );
 }
 

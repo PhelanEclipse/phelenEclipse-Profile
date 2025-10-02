@@ -6,10 +6,30 @@ type ObjectType = Record<string, unknown>;
 export function isIntoView(el: Element) {
 	const rect = el.getBoundingClientRect();
 	const innerHeight = window.innerHeight;
-	if (rect.bottom <= innerHeight) {
+	if (rect.bottom >= innerHeight - (el.clientHeight / 2)) {
 		return true;
 	}
 	return false;
+}
+
+export function observeAnimation(element: Element, container?: Element, className?: string) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(className ?? '');
+        }else {
+          entry.target.classList.remove(className ?? '');
+        }
+      });
+    },
+    {
+      root: container || null,
+      threshold: 0.1,
+    }
+  );
+
+  observer.observe(element);
 }
 
 export function isYesterday(millisecond: number) {

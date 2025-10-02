@@ -1,3 +1,4 @@
+import { Scroll } from "@/components/ui/animation/scroll";
 import { Typography } from "@/components/ui/dataDisplay/typography";
 import Box from "@/components/ui/layout/box";
 import type React from "react";
@@ -78,18 +79,27 @@ const data: CardProps[] = [
 
 function Skill() {
   return (
-    <div className="w-full transition-all duration-[2.5s] bg-white overflow-hidden">
-      <article className="max-w-[1440px] w-full m-auto gap-20 h-full flex flex-col items-center py-20">
-        <Typography.Headings className="dark:text-dark uppercase text-[92px]">
-          Skills
-        </Typography.Headings>
-        <Box className="flex flex-wrap gap-20 w-full">
-          {data.map((i) => {
-            return <Card key={i.title} {...i} />;
-          })}
-        </Box>
-      </article>
-    </div>
+    <Scroll.ByElement
+      idElementScroll="landingPage"
+      id="skill"
+      animation="personal-active"
+    >
+      <div
+        id="skill"
+        className="w-full experiences transition-all duration-[2.5s] bg-white overflow-hidden relative"
+      >
+        <article className="max-w-[1440px] w-full m-auto gap-20 h-full flex flex-col items-center py-20">
+          <Typography.Headings className="dark:text-dark uppercase text-[92px]">
+            Skills
+          </Typography.Headings>
+          <Box className="flex flex-wrap gap-20 w-full">
+            {data.map((i) => {
+              return <Card key={i.title} {...i} />;
+            })}
+          </Box>
+        </article>
+      </div>
+    </Scroll.ByElement>
   );
 }
 

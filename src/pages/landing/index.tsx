@@ -7,7 +7,7 @@ import Work from "@/layouts/desktop/landing/work";
 
 function Landing() {
   return (
-    <Box className="h-screen overflow-y-auto">
+    <Box id="landingPage" className="h-screen overflow-y-auto">
       <Introduce />
       <Personal />
       <Work />
