@@ -125,8 +125,8 @@ function Skill() {
         className="w-full skill experiences transition-all duration-[2.5s] bg-white overflow-hidden relative"
       >
         <article className="max-w-[1440px] w-full m-auto gap-20 h-full flex flex-col items-center py-20 overflow-hidden">
-          <Box className="h-[138px]">
-            <Box className="text-skill overflow-hidden flex flex-col items-end">
+          <Box className="h-[138px] flex items-end">
+            <Box className="text-skill overflow-hidden">
               <Typography.Headings className="dark:text-white uppercase text-[92px]">
                 Skills
               </Typography.Headings>

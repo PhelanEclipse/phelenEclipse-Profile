@@ -1,14 +1,17 @@
+import HoverCard from "@/components/ui/animation/hoverCard";
 import { Typography } from "@/components/ui/dataDisplay/typography";
 import Box from "@/components/ui/layout/box";
 
 type CardProps = {
   title: string;
   skills: string[];
+  platform: string;
+  description: string;
 };
 
 function Card(props: CardProps) {
   return (
-    <div className="w-[200px] h-[300px] relative border border-solid border-white/40 rounded-2xl overflow-hidden">
+    <div className="w-[300px] h-[400px] relative border border-solid border-white/40 rounded-2xl overflow-hidden">
       <div className="w-full h-full p-1 absolute bg-purple-400">
         <div className="w-full h-full rounded-xl rounded-tr-[100px] rounded-br-[40px] bg-[#222]"></div>
       </div>
@@ -22,17 +25,32 @@ function Card(props: CardProps) {
         ></div>
       </div>
 
-      <div className="w-full h-full p-2 flex justify-between absolute inset-0">
-        <div className="w-3/5 p-2 pt-3 pb-1.5 flex flex-col rounded-xl backdrop-blur-lg bg-gray-50/10 text-gray-200 font-medium font-mono">
-          <span className="text-xl font-medium">Card</span>
-          <span className="text-xs text-gray-400">text</span>
-          <div className="w-full mt-auto flex items-center justify-center">
-            <span className="text-xs text-gray-400">2025</span>
-          </div>
-        </div>
+      <div className="w-full h-full p-2 gap-2 flex justify-between absolute inset-0">
+        <Box className="p-2 pt-3 pb-1.5 w-full rounded-xl overflow-hidden">
+          <HoverCard className="w-full h-full rounded-xl overflow-hidden">
+            <div className="w-full h-full flex flex-col rounded-xl backdrop-blur-lg bg-gray-50/10 text-gray-200 font-medium font-mono p-4">
+              <Typography.Headings type="h3">
+                <span className="text-xl font-medium uppercase">
+                  {props.title}
+                </span>
+              </Typography.Headings>
+              <p className="py-4">
+                <span className="text-xs text-white">{props.description}</span>
+              </p>
+              <div className="w-full mt-auto flex items-center justify-center">
+                <span className="text-xs text-gray-400 uppercase">
+                  {props.platform}
+                </span>
+              </div>
+            </div>
+          </HoverCard>
+        </Box>
         <div className="h-full pt-2 flex flex-col items-end text-white/50">
-          <span className="text-[10px] leading-[12px]">UIverse</span>
-          <span className="text-[10px] leading-[13px]">card</span>
+          <p className="text-center text-wrap">
+            <span className="text-[14px] text-white leading-[12px] uppercase font-medium">
+              2025
+            </span>
+          </p>
           <div className="w-8 h-8 mt-auto flex items-center justify-center rounded-full backdrop-blur-lg bg-gray-50/20 cursor-pointer transition-all duration-300 hover:bg-gray-50/30">
             <span className="font-serif text-white/80">
               <svg
@@ -63,7 +81,10 @@ const data: CardProps[] = [
       "Participate in bug fixing and new feature development",
       "Technologies used include: ReactJs, styled components and MUI.",
     ],
-    title: "Gold Blood",
+    title: "giotmauvang",
+    platform: "web",
+    description:
+      "Giot Mau Vang is a non-profit platform dedicated to promoting voluntary blood donation in Vietnam, connecting donors, hospitals, and communities to save lives.",
   },
   {
     skills: [
@@ -72,6 +93,9 @@ const data: CardProps[] = [
       "Technologies used include: Framework NextJS and MUI.",
     ],
     title: "EVNHCMC",
+    platform: "web",
+    description:
+      "Giot Mau Vang is a non-profit platform dedicated to promoting voluntary blood donation in Vietnam, connecting donors, hospitals, and communities to save lives.",
   },
   {
     skills: [
@@ -80,6 +104,9 @@ const data: CardProps[] = [
       "The project is developed on a large scale, developed and worked on in Singapore. The project is still being implemented.",
     ],
     title: "E-commerce",
+    platform: "web",
+    description:
+      "Giot Mau Vang is a non-profit platform dedicated to promoting voluntary blood donation in Vietnam, connecting donors, hospitals, and communities to save lives.",
   },
   {
     skills: [
@@ -88,6 +115,9 @@ const data: CardProps[] = [
       "The project is a website introducing the company and some features about consulting and human resources.",
     ],
     title: "Web Company",
+    platform: "web",
+    description:
+      "Giot Mau Vang is a non-profit platform dedicated to promoting voluntary blood donation in Vietnam, connecting donors, hospitals, and communities to save lives.",
   },
   {
     skills: [
@@ -96,6 +126,9 @@ const data: CardProps[] = [
       "Developed in parallel with Viettel Post application for orders. Using components provided by Zalo Mini App.",
     ],
     title: "Viettel Post",
+    platform: "Zalo Mini App",
+    description:
+      "Giot Mau Vang is a non-profit platform dedicated to promoting voluntary blood donation in Vietnam, connecting donors, hospitals, and communities to save lives.",
   },
   {
     skills: [
@@ -104,6 +137,9 @@ const data: CardProps[] = [
       "Outsourcing projects involve selling and developing on components provided by zalo mini app.",
     ],
     title: "kingSmart",
+    platform: "Zalo Mini App",
+    description:
+      "Giot Mau Vang is a non-profit platform dedicated to promoting voluntary blood donation in Vietnam, connecting donors, hospitals, and communities to save lives.",
   },
   {
     skills: [
@@ -112,6 +148,9 @@ const data: CardProps[] = [
       "Outsourcing projects involve selling and developing on components provided by zalo mini app.",
     ],
     title: "Cacafly",
+    platform: "Zalo Mini App",
+    description:
+      "Giot Mau Vang is a non-profit platform dedicated to promoting voluntary blood donation in Vietnam, connecting donors, hospitals, and communities to save lives.",
   },
   {
     skills: [
@@ -119,6 +158,9 @@ const data: CardProps[] = [
       "Cohesive Music is an online platform that allows users to listen to, download, or share songs, albums, and playlists from a variety of genres.",
     ],
     title: "Cohesive Music",
+    platform: "web",
+    description:
+      "Giot Mau Vang is a non-profit platform dedicated to promoting voluntary blood donation in Vietnam, connecting donors, hospitals, and communities to save lives.",
   },
 ];
 
