@@ -151,7 +151,7 @@ function Work() {
               timeEnd="The current"
               timeStart="July, 2022"
             >
-              <div className="pl-32 position  transition-all duration-1000 flex flex-col gap-6">
+              <div className="pl-32 position duration-[2s] transition-all flex flex-col gap-6">
                 <p className="text-2xl font-bold uppercase -translate-x-5">
                   Web developer
                 </p>

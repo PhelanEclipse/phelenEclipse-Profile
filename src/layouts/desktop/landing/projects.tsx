@@ -8,25 +8,49 @@ type CardProps = {
 
 function Card(props: CardProps) {
   return (
-    <div className="relative overflow-hidden w-60 h-80 rounded-3xl cursor-pointer text-2xl font-bold bg-white group">
-      <div className="z-10 absolute w-full h-full peer"></div>
-      <div className="absolute peer-hover:-top-20 peer-hover:-left-16 peer-hover:w-[140%] peer-hover:h-[140%] -top-32 -left-16 w-32 h-44 rounded-full bg-[#6554b3] transition-all duration-500"></div>
-      <div className="absolute flex text-xl items-end justify-end overflow-hidden peer-hover:right-0 peer-hover:rounded-b-none peer-hover:bottom-0 peer-hover:items-center peer-hover:justify-center peer-hover:w-full peer-hover:h-full -bottom-32 -right-16 w-36 h-44 rounded-full bg-[#6554b3] transition-all duration-500">
-        <div className="w-60 min-w-60 h-80 flex flex-col justify-center px-6 gap-4 dark:text-white opacity-0 transition-all duration-500 group-hover:opacity-100">
-          <Typography.Headings type="h4" className="dark:text-white !text-2xl">
-            {props.title}
-          </Typography.Headings>
-          <ul className="list-disc text-sm list-inside leading-6">
-            {props.skills.map((i) => (
-              <li key={i}>{i}</li>
-            ))}
-          </ul>
-        </div>
+    <div className="w-[200px] h-[300px] relative border border-solid border-white/40 rounded-2xl overflow-hidden">
+      <div className="w-full h-full p-1 absolute bg-purple-400">
+        <div className="w-full h-full rounded-xl rounded-tr-[100px] rounded-br-[40px] bg-[#222]"></div>
       </div>
-      <div className="w-full h-full items-center justify-center flex uppercase">
-        <Typography.Headings type="h4" className="dark:text-dark">
-          {props.title}
-        </Typography.Headings>
+
+      <div className="w-full h-full flex items-center justify-center relative backdrop-blur-lg rounded-2xl">
+        <div
+          className="w-32 h-32 rounded-full bg-gradient-to-tr from-purple-500 to-orange-300 animate-spin"
+          style={{
+            animationDuration: "12s",
+          }}
+        ></div>
+      </div>
+
+      <div className="w-full h-full p-2 flex justify-between absolute inset-0">
+        <div className="w-3/5 p-2 pt-3 pb-1.5 flex flex-col rounded-xl backdrop-blur-lg bg-gray-50/10 text-gray-200 font-medium font-mono">
+          <span className="text-xl font-medium">Card</span>
+          <span className="text-xs text-gray-400">text</span>
+          <div className="w-full mt-auto flex items-center justify-center">
+            <span className="text-xs text-gray-400">2025</span>
+          </div>
+        </div>
+        <div className="h-full pt-2 flex flex-col items-end text-white/50">
+          <span className="text-[10px] leading-[12px]">UIverse</span>
+          <span className="text-[10px] leading-[13px]">card</span>
+          <div className="w-8 h-8 mt-auto flex items-center justify-center rounded-full backdrop-blur-lg bg-gray-50/20 cursor-pointer transition-all duration-300 hover:bg-gray-50/30">
+            <span className="font-serif text-white/80">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 12 12"
+                className="w-4 h-4"
+              >
+                <g fill="none">
+                  <path
+                    d="M4.646 2.146a.5.5 0 0 0 0 .708L7.793 6L4.646 9.146a.5.5 0 1 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
