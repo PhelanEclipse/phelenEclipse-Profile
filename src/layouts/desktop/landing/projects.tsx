@@ -236,9 +236,9 @@ function Projects() {
           id="projects"
           className="w-full projects transition-all duration-[2.5s] bg-dark overflow-hidden"
         >
-          <article className="max-w-[1440px] w-full m-auto gap-20 h-full flex flex-col items-center py-20">
-            <Box className="h-[138px] overflow-hidden flex items-end justify-center">
-              <Typography.Headings className="dark:text-white text-project uppercase text-[92px]">
+          <article className="max-w-[1440px] w-full m-auto xl:gap-20 lg:gap-10 max-lg:gap-6 h-full flex flex-col items-center xl:py-20 lg:py-10 max-lg:py-6">
+            <Box className="xl:h-[138px] lg:h-[96px] max-lg:h-[72px] overflow-hidden flex items-end justify-center">
+              <Typography.Headings className="dark:text-white text-project uppercase xl:text-[92px] lg:text-[64px] max-lg:text-[48px]">
                 Projects
               </Typography.Headings>
             </Box>

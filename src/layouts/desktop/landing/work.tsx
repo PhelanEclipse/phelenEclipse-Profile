@@ -14,24 +14,26 @@ type ProcessWorkProps = {
 
 const ProcessWork = (props: ProcessWorkProps) => {
   return (
-    <div className="">
-      <div className="text-white gap-14 divide-x min-w-fit grid grid-cols-2 relative">
-        <section className="py-7 company transition-all duration-[2s] relative flex flex-col gap-2 text-nowrap text-2xl w-full pr-14">
+    <div className="lg:px-10">
+      <div className="text-white xl:gap-14 lg:gap-0 xl:divide-x min-w-fit grid xl:grid-cols-2 lg:grid-cols-1 relative">
+        <section className="xl:py-7 lg:py-10 max-lg:py-10 company transition-all duration-[2s] relative flex flex-col gap-2 text-nowrap text-2xl w-full xl:pr-14 lg:pr-0 lg:border-b max-lg:border-b xl:border-none">
           <div className="flex flex-col gap-2">
-            <p className="text-2xl font-bold uppercase gap-3 text-end">
+            <p className="text-2xl font-bold uppercase gap-3 xl:text-end lg:text-start">
               {props.companyName}
             </p>
           </div>
-          <div className="flex items-center justify-end gap-1 uppercase text-[14px]">
+          <div className="flex items-center xl:justify-end lg:justify-start gap-1 uppercase text-[14px]">
             <p className="italic">{props.timeStart}</p>
             <GoDotFill />
             <p className="italic">{props.timeEnd}</p>
           </div>
         </section>
-        <div className="absolute m-auto left-0 right-0 top-5 size-14 translate-x-7 rounded-full bg-dark flex items-center justify-center border-dark border-4">
+        <div className="absolute xl:m-auto left-0 right-0 xl:top-5 lg:top-[120px] max-lg:top-[120px] size-14 translate-x-7 rounded-full bg-dark flex items-center justify-center border-dark border-4">
           <Loader.LoudBull />
         </div>
-        <article className="py-7">{props.children}</article>
+        <article className="xl:py-7 lg:py-10 max-lg:pt-10">
+          {props.children}
+        </article>
       </div>
     </div>
   );
@@ -132,30 +134,30 @@ function Work() {
             </div>
           </div>
         </div>
-        <Box className="containerBallBottom absolute bottom-40 left-40 transition-all duration-1000">
+        <Box className="containerBallBottom absolute bottom-40 left-40 transition-all duration-1000 lg:opacity-0 xl:opacity-100 max-lg:opacity-0">
           <Box className="size-80 ballBottom transition-all duration-500 rounded-full scale-125">
             <Astronaut />
           </Box>
         </Box>
-        <article className="max-w-[1440px] w-full m-auto gap-20 h-full flex flex-col items-center justify-between py-20 relative z-10">
-          <Box className="h-[138px] flex items-end">
+        <article className="max-w-[1440px] w-full m-auto xl:gap-20 lg:gap-0 h-full flex flex-col items-center justify-between xl:py-20 lg:py-10 max-lg:py-10 relative z-10">
+          <Box className="xl:h-[138px] lg:h-[96px] max-lg:h-[72px] flex items-end max-lg:m-auto max-lg:w-[768px] max-lg:px-10">
             <Box className="text-work overflow-hidden">
-              <Typography.Headings className="dark:text-white uppercase transition-all duration-1000 text-[92px]">
+              <Typography.Headings className="dark:text-white uppercase transition-all duration-1000 xl:text-[92px] lg:text-[64px] max-lg:text-[48px]">
                 My Work Experience
               </Typography.Headings>
             </Box>
           </Box>
-          <div className="flex flex-col gap-20 h-full">
+          <div className="flex flex-col gap-20 h-full max-lg:max-w-[768px] max-lg:px-10">
             <ProcessWork
               companyName="South Telecom (Intelin branch)"
               timeEnd="The current"
               timeStart="July, 2022"
             >
-              <div className="pl-32 position duration-[2s] transition-all flex flex-col gap-6">
-                <p className="text-2xl font-bold uppercase -translate-x-5">
+              <div className="xl:pl-32 lg:pl-0 position duration-[2s] transition-all flex flex-col gap-6">
+                <p className="text-2xl font-bold uppercase xl:-translate-x-5">
                   Web developer
                 </p>
-                <ul className="list-disc flex flex-col gap-4 font-light leading-7">
+                <ul className="list-disc flex flex-col gap-4 font-light leading-7 lg:pl-5 xl:pl-0">
                   <li>
                     <p>
                       Developed a <span className="font-bold">RESTful API</span>{" "}

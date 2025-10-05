@@ -38,9 +38,9 @@ const Personal = () => {
         className="transition-all personal duration-[2.5s] overflow-hidden"
       >
         <article className="w-full h-full text-white relative">
-          <div className="max-w-[1440px] w-full m-auto gap-10 py-20 flex flex-col justify-between items-center h-full">
+          <div className="max-w-[1440px] w-full m-auto gap-10 py-20 max-lg:py-6 lg:py-10 flex flex-col justify-between items-center h-full">
             <div className="flex flex-col gap-16 items-center w-full h-full">
-              <div className="flex flex-col items-center gap-8 justify-between h-full">
+              <div className="flex flex-col items-center gap-8 max-lg:gap-20 lg:gap-14 justify-between h-full">
                 <div className="flex flex-col justify-center items-center gap-8">
                   <Box className="size-[280px] rounded-full avatar transition-all duration-[2s]">
                     <div
@@ -63,19 +63,19 @@ const Personal = () => {
                         </p>
                       </div>
                     </Box>
-                    <Box className="h-[40px] flex items-end overflow-hidden">
-                      <p className="text-4xl personal-position leading-10 tracking-[20px] text-center uppercase">
+                    <Box className="h-[40px] max-lg:h-[32px] flex items-end overflow-hidden">
+                      <p className="lg:text-4xl max-lg:text-2xl personal-position leading-10 tracking-[20px] text-center uppercase">
                         FRONT-end DEVELOPER
                       </p>
                     </Box>
                   </section>
                 </div>
-                <div className="flex gap-16 w-full text-white">
+                <div className="flex xl:flex-row lg:flex-col md:flex-col gap-16 w-full text-white">
                   <section className="flex flex-col gap-4">
-                    <p className="flex gap-6 font-bold uppercase text-3xl">
+                    <Box className="flex gap-6 font-bold uppercase text-3xl max-lg:text-2xl">
                       <Loader.NicePanda /> EDUCATION
-                    </p>
-                    <div className="px-14 border-white relative flex flex-col gap-4 text-xl">
+                    </Box>
+                    <div className="px-14 border-white relative flex flex-col gap-4 text-xl max-lg:text-base">
                       <div className="w-1 h-full absolute top-0 left-3 bg-white rounded-full" />
                       <ul className="list-disc px-4 education">
                         <li className="py-2">
@@ -94,7 +94,8 @@ const Personal = () => {
                         </li>
                         <li className="py-2">
                           <p>
-                            GPA: <span className="font-bold">3.0</span>
+                            <span className="font-bold">GPA: </span>
+                            3.0
                           </p>
                         </li>
                         <li>
@@ -106,10 +107,10 @@ const Personal = () => {
                     </div>
                   </section>
                   <section className="flex flex-col gap-4">
-                    <p className="flex items-center gap-6 font-bold uppercase text-3xl">
+                    <Box className="flex items-center gap-6 font-bold uppercase text-3xl max-lg:text-2xl">
                       <Loader.NicePanda /> CONTACTS
-                    </p>
-                    <div className="px-14 border-white relative flex flex-col gap-4 text-xl">
+                    </Box>
+                    <div className="px-14 border-white relative flex flex-col gap-4 text-xl max-lg:text-base">
                       <div className="w-1 h-full absolute top-0 left-3 bg-white rounded-full" />
                       <ul className="list-disc px-4 text-lg education">
                         <li className="py-2">

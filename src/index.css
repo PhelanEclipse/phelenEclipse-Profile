@@ -43,7 +43,8 @@ body {
     transform: rotate(-360deg);
   }
 
-  100% {}
+  100% {
+  }
 }
 
 @keyframes shk2 {
@@ -51,22 +52,19 @@ body {
     transform: rotate(360deg);
   }
 
-  100% {}
+  100% {
+  }
 }
 
 .space-loader {
   position: relative;
   width: 400px;
   height: 400px;
-  /* background: radial-gradient(
-    circle at center,
-    #1a1a2e 0%,
-    #0f0f1e 50%,
-    #080810 100%
-  ); */
+  @media screen and (max-width: 1023px) {
+    width: 300px;
+    height: 300px;
+  }
   border-radius: 50%;
-  /* box-shadow: 0 0 60px rgba(0, 0, 0, 0.6),
-    inset 0 0 50px rgba(255, 255, 255, 0.05); */
   overflow: hidden;
 
   .astronaut {
@@ -96,9 +94,11 @@ body {
     position: absolute;
     width: 70px;
     height: 50px;
-    background: linear-gradient(135deg,
-        rgba(0, 255, 255, 0.2),
-        rgba(0, 0, 255, 0.1));
+    background: linear-gradient(
+      135deg,
+      rgba(0, 255, 255, 0.2),
+      rgba(0, 0, 255, 0.1)
+    );
     border-radius: 50% 50% 45% 45%;
     top: 24px;
     left: 5px;
@@ -108,10 +108,12 @@ body {
   .helmet-inner-glass {
     position: absolute;
     inset: 2px;
-    background: linear-gradient(135deg,
-        rgba(255, 255, 255, 0.4) 0%,
-        transparent 50%,
-        rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      transparent 50%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
     border-radius: inherit;
     animation: glass-shine 3s ease-in-out infinite;
   }
@@ -120,9 +122,11 @@ body {
     position: absolute;
     width: 30px;
     height: 30px;
-    background: radial-gradient(circle at 30% 30%,
-        rgba(255, 255, 255, 0.8),
-        transparent 70%);
+    background: radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 0.8),
+      transparent 70%
+    );
     border-radius: 50%;
     top: 2px;
     left: 2px;
@@ -183,9 +187,11 @@ body {
   .stars {
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(1px 1px at var(--star-x, 50%) var(--star-y, 50%),
-        white 100%,
-        transparent);
+    background-image: radial-gradient(
+      1px 1px at var(--star-x, 50%) var(--star-y, 50%),
+      white 100%,
+      transparent
+    );
     opacity: 0.8;
   }
 
@@ -270,9 +276,11 @@ body {
   .progress-bar {
     width: 30%;
     height: 100%;
-    background: linear-gradient(90deg,
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.8));
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.8)
+    );
     border-radius: 2px;
     animation: progress 2s ease-in-out infinite;
   }
@@ -327,7 +335,6 @@ body {
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translate(-50%, -50%) translateY(-10px) rotate(-2deg);
@@ -339,7 +346,6 @@ body {
 }
 
 @keyframes glass-shine {
-
   0%,
   100% {
     opacity: 0.3;
@@ -353,7 +359,6 @@ body {
 }
 
 @keyframes reflection-move {
-
   0%,
   100% {
     transform: translate(0, 0);
@@ -365,7 +370,6 @@ body {
 }
 
 @keyframes blink {
-
   0%,
   100% {
     opacity: 0.3;
@@ -410,7 +414,6 @@ body {
   -webkit-text-stroke: 1px var(--animation-color);
 }
 
-/* hover */
 .button-profile:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 0px var(--animation-color));
@@ -471,7 +474,6 @@ body {
 }
 
 @keyframes push_401 {
-
   0%,
   50% {
     transform: translate(-50%, 0%) scale(1);
@@ -631,10 +633,12 @@ body {
     animation: moveBallBottom 5s infinite ease-in-out;
   }
 
-  /* From Uiverse.io by Admin12121 */
   .content {
     width: 300px;
     height: 300px;
+    @media screen and (max-width: 1023px) {
+      transform: scale(0.7) rotate(45deg);
+    }
     position: relative;
     display: flex;
     justify-content: center;
@@ -652,9 +656,6 @@ body {
     transform-origin: center center;
     box-shadow: inset 2px -10px 0px rgba(0, 0, 0, 0.1);
     animation: planet 5s ease infinite alternate;
-    /* planet ring */
-    /* to cover the back of the ring */
-    /* planet spots */
   }
 
   @keyframes planet {
@@ -857,15 +858,40 @@ body {
     animation: flipTextHighLight 2s ease;
     overflow: hidden;
   }
+  @media screen and (max-width: 1023px) {
+    .text-highlight {
+      animation: flipTextHighLight-lg 2s ease;
+      overflow: hidden;
+    }
+  }
+    @media screen and (max-width: 768px) {
+    .text-highlight {
+      animation: flipTextHighLight-md 2s ease;
+      overflow: hidden;
+    }
+  }
 
   .text-experience {
     animation: flipTextExperience 2s ease;
     overflow: hidden;
   }
 
+  @media screen and (max-width: 1023px) {
+    .text-experience {
+      animation: flipTextExperience-md 2s ease;
+      overflow: hidden;
+    }
+  }
+
   .text-description {
     animation: flipTextDescription 2s ease;
     overflow: hidden;
+  }
+  @media screen and (max-width: 1023px) {
+    .text-description {
+      animation: flipTextDescription-md 2s ease;
+      overflow: hidden;
+    }
   }
 
   .ballBottom {
@@ -880,39 +906,44 @@ body {
     display: block;
     width: 200px;
     height: 200px;
+    @media screen and (max-width: 1023px) {
+      transform: scale(0.5) rotate(-20deg) !important;
+    }
     position: relative;
     transform-style: preserve-3d;
     border-radius: 50%;
     background: #fcc96b;
     background: #fcc96b;
-    background: linear-gradient(180deg,
-        #fcc96b 0%,
-        #fcc96b 15%,
-        #f7ae01 15%,
-        #f7ae01 19%,
-        #fcc96b 19%,
-        #fcc96b 22%,
-        #f7ae01 22%,
-        #f7ae01 28%,
-        #fcc96b 28%,
-        #fcc96b 31%,
-        #fcc96b 33%,
-        #fcc96b 36%,
-        #f7ae01 36%,
-        #f7ae01 48%,
-        #fcc96b 48%,
-        #fcc96b 55%,
-        #f7ae01 55%,
-        #f7ae01 66%,
-        #fcc96b 66%,
-        #fcc96b 70%,
-        #f7ae01 70%,
-        #f7ae01 73%,
-        #fcc96b 73%,
-        #fcc96b 82%,
-        #f7ae01 82%,
-        #c7ba9d 86%,
-        #fcc96b 86%);
+    background: linear-gradient(
+      180deg,
+      #fcc96b 0%,
+      #fcc96b 15%,
+      #f7ae01 15%,
+      #f7ae01 19%,
+      #fcc96b 19%,
+      #fcc96b 22%,
+      #f7ae01 22%,
+      #f7ae01 28%,
+      #fcc96b 28%,
+      #fcc96b 31%,
+      #fcc96b 33%,
+      #fcc96b 36%,
+      #f7ae01 36%,
+      #f7ae01 48%,
+      #fcc96b 48%,
+      #fcc96b 55%,
+      #f7ae01 55%,
+      #f7ae01 66%,
+      #fcc96b 66%,
+      #fcc96b 70%,
+      #f7ae01 70%,
+      #f7ae01 73%,
+      #fcc96b 73%,
+      #fcc96b 82%,
+      #f7ae01 82%,
+      #c7ba9d 86%,
+      #fcc96b 86%
+    );
     box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.25),
       inset 8px -4px 6px rgba(199, 128, 0, 0.5),
       inset -8px 4px 8px rgba(255, 235, 199, 0.5), inset 20px -5px 12px #f7ae01,
@@ -979,6 +1010,26 @@ body {
   }
 }
 
+@keyframes flipTextHighLight-lg {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 156px;
+  }
+}
+
+@keyframes flipTextHighLight-md {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 84px;
+  }
+}
+
 @keyframes flipTextExperience {
   0% {
     height: 0px;
@@ -986,6 +1037,24 @@ body {
 
   100% {
     height: 138px;
+  }
+}
+@keyframes flipTextExperience-lg {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 96px;
+  }
+}
+@keyframes flipTextExperience-md {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 72px;
   }
 }
 
@@ -998,9 +1067,17 @@ body {
     height: 64px;
   }
 }
+@keyframes flipTextDescription-md {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 128px;
+  }
+}
 
 @keyframes moveBallBottom {
-
   0%,
   100% {
     transform: translateX(-160px) translateY(-160px) scale(1.5);
@@ -1012,7 +1089,6 @@ body {
 }
 
 @keyframes moveBallTop {
-
   0%,
   100% {
     transform: translateX(0px) translateY(0px) scale(1.5);
@@ -1070,6 +1146,13 @@ body {
     animation: flipTextPosition 1s ease-in-out;
   }
 
+  @media screen and (max-width: 1023px) {
+    .personal-position {
+      animation: flipTextPosition-md 1s ease-in-out;
+    }
+    
+  }
+
   .education {
     li {
       transition: all 1s;
@@ -1120,6 +1203,16 @@ body {
   }
 }
 
+@keyframes flipTextPosition-md {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 32px;
+  }
+}
+
 .experiences {
   .evn {
     .stars-container {
@@ -1131,9 +1224,11 @@ body {
     .stars {
       position: absolute;
       inset: 0;
-      background-image: radial-gradient(1px 1px at var(--star-x, 50%) var(--star-y, 50%),
-          white 100%,
-          transparent);
+      background-image: radial-gradient(
+        1px 1px at var(--star-x, 50%) var(--star-y, 50%),
+        white 100%,
+        transparent
+      );
       opacity: 0.8;
     }
 
@@ -1324,11 +1419,13 @@ body {
     height: 80px;
     position: absolute;
     z-index: 3;
-    background: -webkit-linear-gradient(left,
-        #e3e8eb 0%,
-        #e3e8eb 50%,
-        #fbfdfa 50%,
-        #fbfdfa 100%);
+    background: -webkit-linear-gradient(
+      left,
+      #e3e8eb 0%,
+      #e3e8eb 50%,
+      #fbfdfa 50%,
+      #fbfdfa 100%
+    );
     border-radius: 50%;
     top: 34px;
     left: calc(50% - 47.5px);
@@ -1341,11 +1438,13 @@ body {
     position: absolute;
     top: calc(50% - 25px);
     left: calc(50% - 30px);
-    background: -webkit-linear-gradient(top,
-        #15aece 0%,
-        #15aece 50%,
-        #0391bf 50%,
-        #0391bf 100%);
+    background: -webkit-linear-gradient(
+      top,
+      #15aece 0%,
+      #15aece 50%,
+      #0391bf 50%,
+      #0391bf 100%
+    );
     border-radius: 15px;
   }
 
@@ -1370,11 +1469,13 @@ body {
     border-radius: 40px / 20px;
     top: 105px;
     left: calc(50% - 41px);
-    background: -webkit-linear-gradient(left,
-        #e3e8eb 0%,
-        #e3e8eb 50%,
-        #fbfdfa 50%,
-        #fbfdfa 100%);
+    background: -webkit-linear-gradient(
+      left,
+      #e3e8eb 0%,
+      #e3e8eb 50%,
+      #fbfdfa 50%,
+      #fbfdfa 100%
+    );
   }
 
   .panel {
@@ -1527,6 +1628,16 @@ body {
   .text-work {
     animation: flipTextExperience 2s;
   }
+   @media screen and (max-width: 1279px) {
+    .text-work {
+      animation: flipTextExperience-lg 2s;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .text-work {
+      animation: flipTextExperience-md 2s;
+    }
+  }
 
   .company {
     transform: translateX(0px);
@@ -1537,7 +1648,6 @@ body {
     transform: translateX(0px);
     opacity: 1;
   }
-
 }
 
 @keyframes snow {
@@ -1566,7 +1676,6 @@ body {
   }
 }
 
-
 .skill {
   .marquee-content {
     display: flex;
@@ -1586,12 +1695,22 @@ body {
     margin: auto;
     animation: scrollLeft 20s linear infinite;
   }
-
 }
 
 .skill.skill-active {
   .text-skill {
     animation: flipTextExperience 2s;
+  }
+
+  @media screen and (max-width: 1279px) {
+    .text-skill {
+      animation: flipTextExperience-lg 2s;
+    }
+  }
+   @media screen and (max-width: 1023px) {
+    .text-skill {
+      animation: flipTextExperience-md 2s;
+    }
   }
 }
 
@@ -1625,8 +1744,18 @@ body {
     animation: flipTextExperience 2s;
   }
 
+  @media screen and (max-width: 1279px) {
+    .text-project {
+      animation: flipTextExperience-lg 2s;
+    }
+  }
+   @media screen and (max-width: 1023px) {
+    .text-project {
+      animation: flipTextExperience-md 2s;
+    }
+  }
   .cardProjects {
-  animation: scrollTop 2s;
+    animation: scrollTop 2s;
   }
 }
 

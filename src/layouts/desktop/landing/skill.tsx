@@ -124,22 +124,22 @@ function Skill() {
         }}
         className="w-full skill experiences transition-all duration-[2.5s] bg-white overflow-hidden relative"
       >
-        <article className="max-w-[1440px] w-full m-auto gap-20 h-full flex flex-col items-center py-20 overflow-hidden">
-          <Box className="h-[138px] flex items-end">
+        <article className="max-w-[1440px] w-full m-auto xl:gap-20 lg:gap-10 h-full flex flex-col items-center xl:py-20 lg:py-10 max-lg:py-6 max-lg:gap-6 overflow-hidden">
+          <Box className="xl:h-[138px] lg:h-[96px] max-lg:h-[72px] flex items-end">
             <Box className="text-skill overflow-hidden">
-              <Typography.Headings className="dark:text-white uppercase text-[92px]">
+              <Typography.Headings className="dark:text-white uppercase xl:text-[92px] lg:text-[64px] max-lg:text-[48px]">
                 Skills
               </Typography.Headings>
             </Box>
           </Box>
           <Box className="marquee-content">
-            {[...dataFront, ...dataFront].map((i) => {
-              return <Card key={i.title} {...i} />;
+            {[...dataFront, ...dataFront].map((i, idx) => {
+              return <Card key={`${i.title}-${idx}`} {...i} />;
             })}
           </Box>
           <Box className="marquee-content-left">
-            {[...dataExtend, ...dataExtend].map((i) => {
-              return <Card key={i.title} {...i} />;
+            {[...dataExtend, ...dataExtend].map((i, idx) => {
+              return <Card key={`${i.title}-${idx}`} {...i} />;
             })}
           </Box>
         </article>
