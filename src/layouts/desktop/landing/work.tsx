@@ -14,9 +14,9 @@ type ProcessWorkProps = {
 
 const ProcessWork = (props: ProcessWorkProps) => {
   return (
-    <div className="lg:px-10">
-      <div className="text-white xl:gap-14 lg:gap-0 xl:divide-x min-w-fit grid xl:grid-cols-2 lg:grid-cols-1 relative">
-        <section className="xl:py-7 lg:py-10 max-lg:py-10 company transition-all duration-[2s] relative flex flex-col gap-2 text-nowrap text-2xl w-full xl:pr-14 lg:pr-0 lg:border-b max-lg:border-b xl:border-none">
+    <div className="lg:px-10 max-md:w-full">
+      <div className="text-white xl:gap-14 lg:gap-0 xl:divide-x min-w-fit max-md:min-w-0 grid xl:grid-cols-2 lg:grid-cols-1 relative max-md:flex max-md:flex-col max-md:max-w-[375px]">
+        <section className="xl:py-7 lg:py-10 max-lg:py-10 company transition-all duration-[2s] relative flex flex-col gap-2 text-nowrap max-md:text-wrap text-2xl w-full xl:pr-14 lg:pr-0 lg:border-b max-lg:border-b xl:border-none">
           <div className="flex flex-col gap-2">
             <p className="text-2xl font-bold uppercase gap-3 xl:text-end lg:text-start">
               {props.companyName}
@@ -28,7 +28,7 @@ const ProcessWork = (props: ProcessWorkProps) => {
             <p className="italic">{props.timeEnd}</p>
           </div>
         </section>
-        <div className="absolute xl:m-auto left-0 right-0 xl:top-5 lg:top-[120px] max-lg:top-[120px] size-14 translate-x-7 rounded-full bg-dark flex items-center justify-center border-dark border-4">
+        <div className="absolute xl:m-auto left-0 right-0 xl:top-5 lg:top-[120px] max-lg:top-[120px] max-md:top-[150px] size-14 translate-x-7 rounded-full bg-dark flex items-center justify-center border-dark border-4">
           <Loader.LoudBull />
         </div>
         <article className="xl:py-7 lg:py-10 max-lg:pt-10">
@@ -139,15 +139,15 @@ function Work() {
             <Astronaut />
           </Box>
         </Box>
-        <article className="max-w-[1440px] w-full m-auto xl:gap-20 lg:gap-0 h-full flex flex-col items-center justify-between xl:py-20 lg:py-10 max-lg:py-10 relative z-10">
-          <Box className="xl:h-[138px] lg:h-[96px] max-lg:h-[72px] flex items-end max-lg:m-auto max-lg:w-[768px] max-lg:px-10">
+        <article className="max-w-[1440px] max-md:max-w-[375px] w-full m-auto xl:gap-20 lg:gap-0 h-full flex flex-col items-center justify-between xl:py-20 lg:py-10 max-lg:py-10 relative z-10">
+          <Box className="xl:h-[138px] lg:h-[96px] max-lg:h-[72px] max-md:h-[48px] flex items-end max-lg:m-auto max-lg:w-[768px] max-lg:px-10 max-md:px-0">
             <Box className="text-work overflow-hidden">
-              <Typography.Headings className="dark:text-white uppercase transition-all duration-1000 xl:text-[92px] lg:text-[64px] max-lg:text-[48px]">
+              <Typography.Headings className="dark:text-white uppercase transition-all duration-1000 xl:text-[92px] lg:text-[64px] max-lg:text-[48px] max-md:text-[32px]">
                 My Work Experience
               </Typography.Headings>
             </Box>
           </Box>
-          <div className="flex flex-col gap-20 h-full max-lg:max-w-[768px] max-lg:px-10">
+          <div className="flex flex-col gap-20 h-full max-lg:max-w-[768px] max-md:max-w-[375px] max-md:px-0 max-lg:px-10">
             <ProcessWork
               companyName="South Telecom (Intelin branch)"
               timeEnd="The current"

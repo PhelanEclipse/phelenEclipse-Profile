@@ -860,11 +860,11 @@ body {
   }
   @media screen and (max-width: 1023px) {
     .text-highlight {
-      animation: flipTextHighLight-lg 2s ease;
+      animation: flipTextHighLight-md 2s ease;
       overflow: hidden;
     }
   }
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .text-highlight {
       animation: flipTextHighLight-md 2s ease;
       overflow: hidden;
@@ -890,6 +890,12 @@ body {
   @media screen and (max-width: 1023px) {
     .text-description {
       animation: flipTextDescription-md 2s ease;
+      overflow: hidden;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .text-description {
+      animation: flipTextDescription-sm 2s ease;
       overflow: hidden;
     }
   }
@@ -1057,6 +1063,15 @@ body {
     height: 72px;
   }
 }
+@keyframes flipTextExperience-sm {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 48px;
+  }
+}
 
 @keyframes flipTextDescription {
   0% {
@@ -1074,6 +1089,15 @@ body {
 
   100% {
     height: 128px;
+  }
+}
+@keyframes flipTextDescription-sm {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 192px;
   }
 }
 
@@ -1141,6 +1165,11 @@ body {
   .personal-name {
     animation: flipTextName 1s ease-in-out;
   }
+  @media screen and (max-width: 767px) {
+    .personal-name {
+      animation: flipTextName-md 1s ease-in-out;
+    }
+  }
 
   .personal-position {
     animation: flipTextPosition 1s ease-in-out;
@@ -1150,8 +1179,8 @@ body {
     .personal-position {
       animation: flipTextPosition-md 1s ease-in-out;
     }
-    
   }
+  
 
   .education {
     li {
@@ -1190,6 +1219,16 @@ body {
 
   100% {
     height: 96px;
+  }
+}
+
+@keyframes flipTextName-md {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 36px;
   }
 }
 
@@ -1628,7 +1667,7 @@ body {
   .text-work {
     animation: flipTextExperience 2s;
   }
-   @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1279px) {
     .text-work {
       animation: flipTextExperience-lg 2s;
     }
@@ -1636,6 +1675,11 @@ body {
   @media screen and (max-width: 1023px) {
     .text-work {
       animation: flipTextExperience-md 2s;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .text-work {
+      animation: flipTextExperience-sm 2s;
     }
   }
 
@@ -1707,7 +1751,7 @@ body {
       animation: flipTextExperience-lg 2s;
     }
   }
-   @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .text-skill {
       animation: flipTextExperience-md 2s;
     }
@@ -1749,7 +1793,7 @@ body {
       animation: flipTextExperience-lg 2s;
     }
   }
-   @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     .text-project {
       animation: flipTextExperience-md 2s;
     }

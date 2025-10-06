@@ -40,7 +40,7 @@ function Introduce() {
         </Box>
         <Box className="max-w-[1440px] relative z-10  m-auto text-white flex flex-col items-center justify-between xl:py-20 lg:py-10 max-lg:py-6">
           <Box className="w-full text-center flex items-center justify-center">
-            <Box className="xl:h-[180px] lg:h-[165px] md:h-[84px] flex flex-col justify-end">
+            <Box className="xl:h-[180px] lg:h-[165px] md:h-[84px] max-md:h-[84px] flex flex-col justify-end">
               <Box className="text-highlight flex flex-col">
                 <Typography.Headings
                   type="h3"
@@ -61,11 +61,11 @@ function Introduce() {
             <Loader.Astronaut />
           </Box>
           <Box className="w-full flex flex-col items-center gap-4">
-            <Box className="lg:h-[138px] md:h-[72px] flex items-end">
+            <Box className="lg:h-[138px] md:h-[72px] max-md:h-[72px] flex items-end">
               <Box className="uppercase flex items-center gap-4 text-experience">
                 <Typography.Headings
                   type="h3"
-                  className="lg:text-[92px] max-lg:text-[48px]"
+                  className="lg:text-[92px] max-lg:text-[48px] max-md:text-[48px]"
                 >
                   04{" "}
                 </Typography.Headings>
@@ -74,7 +74,7 @@ function Introduce() {
                 </Typography.Paragraphs>
               </Box>
             </Box>
-            <Box className="xl:h-[64px] md:h-[128px] max-lg:w-[768px] md:px-10 flex items-end">
+            <Box className="xl:h-[64px] md:h-[128px] max-md:h-[192px] max-lg:w-[768px] md:px-10 flex items-end max-md:w-[375px]">
               <Typography.Headings
                 type="h3"
                 className="uppercase text-description text-[14px] text-center !font-normal leading-8"

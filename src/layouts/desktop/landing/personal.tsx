@@ -38,9 +38,9 @@ const Personal = () => {
         className="transition-all personal duration-[2.5s] overflow-hidden"
       >
         <article className="w-full h-full text-white relative">
-          <div className="max-w-[1440px] w-full m-auto gap-10 py-20 max-lg:py-6 lg:py-10 flex flex-col justify-between items-center h-full">
+          <div className="max-w-[1440px] max-md:max-w-[375px] w-full m-auto gap-10 py-20 max-lg:py-6 lg:py-10 flex flex-col justify-between items-center h-full">
             <div className="flex flex-col gap-16 items-center w-full h-full">
-              <div className="flex flex-col items-center gap-8 max-lg:gap-20 lg:gap-14 justify-between h-full">
+              <div className="flex flex-col items-center gap-8 max-lg:gap-20 lg:gap-14 max-md:gap-10 justify-between h-full">
                 <div className="flex flex-col justify-center items-center gap-8">
                   <Box className="size-[280px] rounded-full avatar transition-all duration-[2s]">
                     <div
@@ -53,24 +53,24 @@ const Personal = () => {
                     </div>
                   </Box>
                   <section className="flex flex-col items-center gap-6">
-                    <Box className="h-[96px] flex items-end overflow-hidden">
+                    <Box className="h-[96px] max-md:h-[36px] flex items-end overflow-hidden">
                       <div className="button-profile personal-name text-nowrap w-fit">
-                        <p className="text-8xl font-semibold uppercase tracking-[20px] text-center actual-text">
+                        <p className="text-8xl max-md:text-3xl font-semibold uppercase tracking-[20px] text-center actual-text">
                           Minh Tan
                         </p>
-                        <p className="text-8xl text-nowrap font-semibold uppercase tracking-[20px] text-center hover-text">
+                        <p className="text-8xl max-md:text-3xl text-nowrap font-semibold uppercase tracking-[20px] text-center hover-text">
                           Minh Tan
                         </p>
                       </div>
                     </Box>
                     <Box className="h-[40px] max-lg:h-[32px] flex items-end overflow-hidden">
-                      <p className="lg:text-4xl max-lg:text-2xl personal-position leading-10 tracking-[20px] text-center uppercase">
+                      <p className="lg:text-4xl max-lg:text-2xl max-md:text-lg personal-position leading-10 tracking-[20px] max-lg:tracking-[8px] text-center uppercase">
                         FRONT-end DEVELOPER
                       </p>
                     </Box>
                   </section>
                 </div>
-                <div className="flex xl:flex-row lg:flex-col md:flex-col gap-16 w-full text-white">
+                <div className="flex xl:flex-row lg:flex-col max-md:flex-col md:flex-col gap-16 w-full text-white">
                   <section className="flex flex-col gap-4">
                     <Box className="flex gap-6 font-bold uppercase text-3xl max-lg:text-2xl">
                       <Loader.NicePanda /> EDUCATION

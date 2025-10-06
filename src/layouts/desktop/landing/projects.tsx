@@ -262,8 +262,8 @@ function Projects() {
           isVisible ? "active" : ""
         }`}
       >
-        <Box className="h-full w-full flex items-center justify-center">
-          <Box className="relative w-[700px] p-2 bg-gradient-to-tr from-purple-500 to-orange-300 rounded-xl">
+        <Box className="h-full w-full flex items-center justify-center p-4">
+          <Box className="relative max-w-[700px] p-2 bg-gradient-to-tr from-purple-500 to-orange-300 rounded-xl">
             <Box
               aria-hidden
               onClick={handler.onClose}
