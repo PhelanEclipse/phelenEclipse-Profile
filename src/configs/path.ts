@@ -3,7 +3,7 @@ export type TPath = {
   title: string;
 };
 
-export const Path: Record<string, TPath> = {
+export const Path = {
   None: {
     title: "Trang chủ",
     url: "/",

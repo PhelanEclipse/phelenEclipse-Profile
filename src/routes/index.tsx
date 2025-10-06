@@ -14,6 +14,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "*",
+    element: <Page.NotFound />,
+  },
 ]);
 
 export default router;

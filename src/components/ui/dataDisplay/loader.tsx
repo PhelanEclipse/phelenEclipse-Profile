@@ -77,8 +77,72 @@ function Astronaut() {
 const LoudBull = () => {
   return <div className="loader_loudBull"></div>;
 };
+
+const Pan = () => {
+  return (
+    <div
+      style={{
+        background: "radial-gradient(circle at top left, #4facfe, #5f2c82)",
+      }}
+      className="loaderPan w-screen h-screen fixed top-0 left-0"
+    >
+      <div className="rings anim-pan">
+        <div
+          style={
+            {
+              "--delay": "06",
+            } as React.CSSProperties
+          }
+          className="ring anim-zoomIn"
+        ></div>
+        <div
+          style={
+            {
+              "--delay": "04",
+            } as React.CSSProperties
+          }
+          className="ring anim-zoomIn"
+        ></div>
+        <div
+          style={
+            {
+              "--delay": "03",
+            } as React.CSSProperties
+          }
+          className="ring anim-zoomIn"
+        ></div>
+        <div
+          style={
+            {
+              "--delay": "02",
+            } as React.CSSProperties
+          }
+          className="ring anim-zoomIn"
+        ></div>
+        <div
+          style={
+            {
+              "--delay": "01",
+            } as React.CSSProperties
+          }
+          className="ring anim-zoomIn"
+        ></div>
+        <div
+          style={
+            {
+              "--delay": "00",
+            } as React.CSSProperties
+          }
+          className="ring anim-zoomIn"
+        ></div>
+      </div>
+    </div>
+  );
+};
+
 export const Loader = {
   NicePanda,
   LoudBull,
   Astronaut,
+  Pan,
 };
