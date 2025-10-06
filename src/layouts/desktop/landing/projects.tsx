@@ -208,9 +208,9 @@ const data: CardProps[] = [
         name: "Backend Services",
       },
     ],
-    role: "ull-stack Developer — built both frontend and backend from scratch, integrated APIs, handled authentication logic, and deployed all services to production environments.",
+    role: "Full-stack Developer — built both frontend and backend from scratch, integrated APIs, handled authentication logic, and deployed all services to production environments.",
     platform: "Website",
-    stack: "React, TypeScript, ExpressJS, MongoDB, Cloudinary, TailwindCSS",
+    stack: "React, TypeScript, ExpressJS, MongoDB, Cloudinary, TailwindCSS and Google OAuth 2.0",
     href: "https://cohesivemusic.vercel.app/",
     description:
       "A personal full-stack project offering free online music. Includes user & admin web with shared backend services.",
