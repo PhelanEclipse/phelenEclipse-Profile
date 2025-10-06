@@ -100,7 +100,7 @@ const Personal = () => {
                         </li>
                         <li>
                           <p>
-                            <span className="font-bold">Software Engineer</span>
+                            <span className="font-bold">Bachelor’s Degree in Software Engineering</span>
                           </p>
                         </li>
                       </ul>

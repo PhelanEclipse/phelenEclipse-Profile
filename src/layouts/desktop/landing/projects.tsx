@@ -18,6 +18,7 @@ type CardProps = {
   overview?: string;
   role?: string;
   stack?: string;
+  year?: string;
   href?: string;
   childrenProjects?: { name: string; description: string }[];
 };
@@ -61,7 +62,7 @@ function Card(props: CardProps) {
         <div className="h-full pt-2 flex flex-col items-end text-white/50">
           <p className="text-center text-wrap">
             <span className="text-[14px] text-white leading-[12px] uppercase font-medium">
-              2025
+              {props.year}
             </span>
           </p>
           <div
@@ -98,6 +99,7 @@ const data: CardProps[] = [
     platform: "Website",
     href: "https://giotmauvang.org.vn/",
     stack: "React, JavaScript, RESTful API, Sass, Redux Toolkit",
+    year: '2022',
     role: "Front-end Developer — built responsive and accessible user interfaces, optimized performance, and collaborated with backend APIs to handle registration, event listings, and real-time updates.",
     description:
       "Giot Mau Vang is a non-profit platform dedicated to promoting voluntary blood donation in Vietnam, connecting donors, hospitals, and communities to save lives.",
@@ -105,6 +107,7 @@ const data: CardProps[] = [
   {
     title: "EVNHCMC",
     platform: "Website",
+    year: '2022',
     overview:
       "Web360 is a public web portal developed for Ho Chi Minh City Power Corporation (EVNHCMC). It provides a 360° view of power services, customer interactions, infrastructure updates, and smart energy insights. Users can access information about their accounts, view service notices, and receive alerts about outages or maintenance.",
     href: "https://web360.evnhcmc.vn/",
@@ -117,6 +120,7 @@ const data: CardProps[] = [
   {
     title: "Locstoc Commerce Ecosystem (International Project)",
     platform: "Website",
+    year: '2023',
     stack:
       "React, TypeScript, TailwindCSS, Redux Toolkit, RESTful APIs, TanStack, NextJs and React kendo UI",
     overview:
@@ -150,6 +154,7 @@ const data: CardProps[] = [
   {
     title: "IntelIn – Intelligence & Innovation",
     platform: "Website",
+    year: '2025',
     href: "https://intelin.vn/",
     stack: "NestJS, EJS, TypeScript, TailwindCSS, RESTful API",
     overview:
@@ -161,6 +166,7 @@ const data: CardProps[] = [
   {
     title: "Viettel Post Mini App",
     platform: "Zalo Mini App",
+    year: '2024',
     overview:
       "A Zalo Mini App developed for Viettel Post to allow users to track parcels, manage deliveries, and access postal services directly inside Zalo. The project aimed to improve convenience and speed for customers using Viettel Post’s digital ecosystem.",
     role: "Front-end Developer — built and maintained UI components using Zalo Mini App SDK, handled API integration, and optimized layout and animations for smooth performance across mobile devices.",
@@ -171,6 +177,7 @@ const data: CardProps[] = [
   {
     title: "kingSmart",
     platform: "Zalo Mini App",
+    year: '2025',
     overview:
       "An e-commerce Zalo Mini App designed to help small businesses and stores sell products, manage orders, and connect with customers directly within the Zalo platform. The app supports product display, shopping cart flow, and payment integration for seamless transactions.",
     role: "Front-end Developer — responsible for building the user interface, integrating with Zalo Mini App SDK, and implementing features like product listing, checkout flow, and API-based data management.",
@@ -181,6 +188,7 @@ const data: CardProps[] = [
   {
     title: "CacaFly – Landing Page & Event Mini Game",
     platform: "Zalo Mini App",
+    year: '2025',
     overview:
       "A creative marketing project for CacaFly, combining a dynamic landing page and an interactive mini game for event campaigns. The website was designed to increase user engagement through animations, gamification, and responsive layouts.",
     role: "Front-end Developer — built interactive UI using React and CSS animations, integrated event APIs, and optimized performance for smooth gameplay and responsive design across devices.",
@@ -190,6 +198,7 @@ const data: CardProps[] = [
   },
   {
     title: "CohesiveMusic – Music Streaming Platform",
+    year: '2025',
     overview:
       "A personal full-stack project that allows users to listen to free music online, manage playlists, and explore tracks seamlessly. The system includes:",
     childrenProjects: [
