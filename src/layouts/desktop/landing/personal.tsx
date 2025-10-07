@@ -1,5 +1,5 @@
 import {
-  FaFacebookF,
+  FaGithub,
   FaLinkedinIn,
   FaMailBulk,
   FaPhoneAlt,
@@ -131,14 +131,14 @@ const Personal = () => {
                         </li>
                         <li className="py-2">
                           <div className="flex items-center gap-2">
-                            <FaFacebookF />{" "}
+                            <FaGithub />{" "}
                             <a
                               target="_blank"
-                              href="https://m.me/phelan.minhtanly"
+                              href="https://github.com/PhelanEclipse"
                               className="underline"
                               rel="noreferrer"
                             >
-                              f.phelan.minhtanly
+                              g.phelan.minhtanly
                             </a>
                           </div>
                         </li>
@@ -151,7 +151,7 @@ const Personal = () => {
                               className="underline"
                               rel="noreferrer"
                             >
-                              link.phelan.minhtanly
+                              l.phelan.minhtanly
                             </a>
                           </div>
                         </li>
