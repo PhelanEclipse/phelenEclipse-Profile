@@ -1,9 +1,4 @@
-import {
-  FaGithub,
-  FaLinkedinIn,
-  FaMailBulk,
-  FaPhoneAlt,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaMailBulk, FaPhoneAlt } from "react-icons/fa";
 import { Loader } from "@/components/ui/dataDisplay/loader";
 import avatarI from "@/assets/images/avatar.jpg";
 import { Scroll } from "@/components/ui/animation/scroll";
@@ -65,7 +60,7 @@ const Personal = () => {
                     </Box>
                     <Box className="h-[40px] max-lg:h-[32px] flex items-end overflow-hidden">
                       <p className="lg:text-4xl max-lg:text-2xl max-md:text-lg personal-position leading-10 tracking-[20px] max-lg:tracking-[8px] text-center uppercase">
-                        FRONT-end DEVELOPER
+                        Full-Stack Developer
                       </p>
                     </Box>
                   </section>
@@ -100,7 +95,9 @@ const Personal = () => {
                         </li>
                         <li>
                           <p>
-                            <span className="font-bold">Bachelor’s Degree in Software Engineering</span>
+                            <span className="font-bold">
+                              Bachelor’s Degree in Software Engineering
+                            </span>
                           </p>
                         </li>
                       </ul>
@@ -115,7 +112,7 @@ const Personal = () => {
                       <ul className="list-disc px-4 text-lg education">
                         <li className="py-2">
                           <div className="flex items-center gap-2">
-                            <FaPhoneAlt /> (+85) 82 75 8423
+                            <FaPhoneAlt /> (+85) 828 75 8423
                           </div>
                         </li>
                         <li className="py-2">

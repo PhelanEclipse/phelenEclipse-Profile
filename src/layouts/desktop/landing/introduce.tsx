@@ -52,7 +52,7 @@ function Introduce() {
                   type="h3"
                   className="uppercase xl:text-[94px] lg:text-[64px] text-highlight"
                 >
-                  I'm FRONT-end DEVELOPER
+                  I'm Full-Stack Developer
                 </Typography.Headings>
               </Box>
             </Box>

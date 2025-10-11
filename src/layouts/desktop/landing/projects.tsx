@@ -99,19 +99,19 @@ const data: CardProps[] = [
     platform: "Website",
     href: "https://giotmauvang.org.vn/",
     stack: "React, JavaScript, RESTful API, Sass, Redux Toolkit",
-    year: '2022',
-    role: "Front-end Developer — built responsive and accessible user interfaces, optimized performance, and collaborated with backend APIs to handle registration, event listings, and real-time updates.",
+    year: "2022",
+    role: "Full-Stack Developer — built responsive and accessible user interfaces, optimized performance, and collaborated with backend APIs to handle registration, event listings, and real-time updates.",
     description:
       "Giot Mau Vang is a non-profit platform dedicated to promoting voluntary blood donation in Vietnam, connecting donors, hospitals, and communities to save lives.",
   },
   {
     title: "EVNHCMC",
     platform: "Website",
-    year: '2022',
+    year: "2022",
     overview:
       "Web360 is a public web portal developed for Ho Chi Minh City Power Corporation (EVNHCMC). It provides a 360° view of power services, customer interactions, infrastructure updates, and smart energy insights. Users can access information about their accounts, view service notices, and receive alerts about outages or maintenance.",
     href: "https://web360.evnhcmc.vn/",
-    role: "Front-end Developer — responsible for building responsive interfaces, integrating APIs, optimizing UI performance, and ensuring cross-browser and cross-device compatibility.",
+    role: "Full-Stack Developer — responsible for building responsive interfaces, integrating APIs, optimizing UI performance, and ensuring cross-browser and cross-device compatibility.",
     stack:
       "NextJs, RESTful API, Redux Toolkit, Sass, TanStack Query and Motion animation",
     description:
@@ -120,7 +120,7 @@ const data: CardProps[] = [
   {
     title: "Locstoc Commerce Ecosystem (International Project)",
     platform: "Website",
-    year: '2023',
+    year: "2023",
     stack:
       "React, TypeScript, TailwindCSS, Redux Toolkit, RESTful APIs, TanStack, NextJs and React kendo UI",
     overview:
@@ -147,58 +147,58 @@ const data: CardProps[] = [
         name: "Backoffice System",
       },
     ],
-    role: "Front-end Developer — built responsive UIs, Vite, integrated RESTful APIs, optimized component reusability, and ensured consistent UX across all 4 platforms.",
+    role: "Full-Stack Developer — built responsive UIs, Vite, integrated RESTful APIs, optimized component reusability, and ensured consistent UX across all 4 platforms.",
     description:
-      "Front-end developer for an international e-commerce system with 4 web apps: O2O (customers), Retailer, Brand, and Backoffice. Focused on UI consistency, API integration, and scalability.Tech: React, TypeScript, TailwindCSS, Redux Toolkit",
+      "Full-Stack Developer for an international e-commerce system with 4 web apps: O2O (customers), Retailer, Brand, and Backoffice. Focused on UI consistency, API integration, and scalability.Tech: React, TypeScript, TailwindCSS, Redux Toolkit",
   },
   {
     title: "IntelIn – Intelligence & Innovation",
     platform: "Website",
-    year: '2025',
+    year: "2025",
     href: "https://intelin.vn/",
     stack: "NestJS, EJS, TypeScript, TailwindCSS, RESTful API",
     overview:
       "IntelIn is a Vietnamese technology company providing smart digital solutions for enterprises in finance, healthcare, and retail. The website serves as the company’s official platform to present its services, technology solutions, and digital transformation initiatives.",
     role: "Full-stack Developer — built and deployed the website using NestJS for API and server-side rendering. Handled backend logic, data fetching, and API architecture to support dynamic content delivery and SEO optimization.",
     description:
-      "Front-end developer at a Vietnamese tech company specializing in smart digital solutions for businesses in finance, healthcare, and retail. Contributed to building responsive web interfaces and optimizing user experience for enterprise platforms.",
+      "Full-Stack Developer at a Vietnamese tech company specializing in smart digital solutions for businesses in finance, healthcare, and retail. Contributed to building responsive web interfaces and optimizing user experience for enterprise platforms.",
   },
   {
     title: "Viettel Post Mini App",
     platform: "Zalo Mini App",
-    year: '2024',
+    year: "2024",
     overview:
       "A Zalo Mini App developed for Viettel Post to allow users to track parcels, manage deliveries, and access postal services directly inside Zalo. The project aimed to improve convenience and speed for customers using Viettel Post’s digital ecosystem.",
-    role: "Front-end Developer — built and maintained UI components using Zalo Mini App SDK, handled API integration, and optimized layout and animations for smooth performance across mobile devices.",
+    role: "Full-Stack Developer — built and maintained UI components using Zalo Mini App SDK, handled API integration, and optimized layout and animations for smooth performance across mobile devices.",
     stack: "Zalo Mini App SDK, React, TypeScript, ZMP-UI, RESTful API",
     description:
-      "Front-end developer for a Zalo Mini App built for Viettel Post, enabling users to track parcels, manage orders, and access delivery services directly within Zalo. Focused on smooth UI/UX and integration with Zalo APIs for real-time updates.",
+      "Full-Stack Developer for a Zalo Mini App built for Viettel Post, enabling users to track parcels, manage orders, and access delivery services directly within Zalo. Focused on smooth UI/UX and integration with Zalo APIs for real-time updates.",
   },
   {
     title: "kingSmart",
     platform: "Zalo Mini App",
-    year: '2025',
+    year: "2025",
     overview:
       "An e-commerce Zalo Mini App designed to help small businesses and stores sell products, manage orders, and connect with customers directly within the Zalo platform. The app supports product display, shopping cart flow, and payment integration for seamless transactions.",
-    role: "Front-end Developer — responsible for building the user interface, integrating with Zalo Mini App SDK, and implementing features like product listing, checkout flow, and API-based data management.",
+    role: "Full-Stack Developer — responsible for building the user interface, integrating with Zalo Mini App SDK, and implementing features like product listing, checkout flow, and API-based data management.",
     stack: "Zalo Mini App SDK, React, TypeScript, ZMP-UI, RESTful API",
     description:
-      "Front-end developer for a Zalo Mini App designed for online sales and product management. The app allows users to browse items, manage carts, and complete in-app purchases with seamless UX and responsive design.",
+      "Full-Stack Developer for a Zalo Mini App designed for online sales and product management. The app allows users to browse items, manage carts, and complete in-app purchases with seamless UX and responsive design.",
   },
   {
     title: "CacaFly – Landing Page & Event Mini Game",
     platform: "Zalo Mini App",
-    year: '2025',
+    year: "2025",
     overview:
       "A creative marketing project for CacaFly, combining a dynamic landing page and an interactive mini game for event campaigns. The website was designed to increase user engagement through animations, gamification, and responsive layouts.",
-    role: "Front-end Developer — built interactive UI using React and CSS animations, integrated event APIs, and optimized performance for smooth gameplay and responsive design across devices.",
+    role: "Full-Stack Developer — built interactive UI using React and CSS animations, integrated event APIs, and optimized performance for smooth gameplay and responsive design across devices.",
     stack: "React, TypeScript, TailwindCSS, CSS Animations, RESTful API",
     description:
-      "As a front-end developer, I built a custom landing page for CacaFly to showcase campaigns and engage users. I also developed an interactive mini game module used during their marketing events, with smooth animations, real-time interaction, and integration with backend APIs.",
+      "As a Full-Stack Developer, I built a custom landing page for CacaFly to showcase campaigns and engage users. I also developed an interactive mini game module used during their marketing events, with smooth animations, real-time interaction, and integration with backend APIs.",
   },
   {
     title: "CohesiveMusic – Music Streaming Platform",
-    year: '2025',
+    year: "2025",
     overview:
       "A personal full-stack project that allows users to listen to free music online, manage playlists, and explore tracks seamlessly. The system includes:",
     childrenProjects: [
@@ -219,7 +219,8 @@ const data: CardProps[] = [
     ],
     role: "Full-stack Developer — built both frontend and backend from scratch, integrated APIs, handled authentication logic, and deployed all services to production environments.",
     platform: "Website",
-    stack: "React, TypeScript, ExpressJS, MongoDB, Cloudinary, TailwindCSS and Google OAuth 2.0",
+    stack:
+      "React, TypeScript, ExpressJS, MongoDB, Cloudinary, TailwindCSS and Google OAuth 2.0",
     href: "https://cohesivemusic.vercel.app/",
     description:
       "A personal full-stack project offering free online music. Includes user & admin web with shared backend services.",
